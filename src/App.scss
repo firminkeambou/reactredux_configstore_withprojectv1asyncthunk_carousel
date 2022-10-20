@@ -1,0 +1,21 @@
+// sassy CSS , seems easier than normal CSS
+@import "../src/common/colors.scss";
+// "*" is the universal selector
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; //absolutely important to avoid adding uncessesary padding or border to the original witdh
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: $font-primary;
+}
+
+body {
+  background: $primary-color;
+}
+.container {
+  margin: 0px 40px;
+}

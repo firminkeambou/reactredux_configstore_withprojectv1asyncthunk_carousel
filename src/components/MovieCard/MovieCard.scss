@@ -1,0 +1,37 @@
+@import "../../common/colors.scss";
+
+.card-item {
+  background: $secondary-color;
+  cursor: pointer;
+  //transition: all 0.3s; //transition all side and let it takes 0.3s to complete
+  // & == The parent selector in this case, is card_item. & , is a special selector invented by Sass that's used in nested selectors to refer to the outer selector.
+  min-height: 450px;
+  height: 100%;
+  margin: 10px;
+  &:hover {
+    transform: scale(
+      1.1
+    ); // scale in which the transition take place in each side
+    transition: all 0.3s; //transition all side and let it takes 0.3s to complete
+  }
+}
+
+.card-top {
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.card-bottom {
+  padding: 20px;
+}
+.card-info {
+  color: $font-primary;
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
